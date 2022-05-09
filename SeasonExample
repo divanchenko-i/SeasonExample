@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class SeasonExample {
+    public static void main(String [] args) throws IOException {
+        System.out.println("Enter any month:");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String month = br.readLine();
+        switch (month) {
+            case "December":
+            case "January":
+            case "February":
+                System.out.println("WINTER");
+                break;
+            case "March":
+            case "April":
+            case "May":
+                System.out.println("SPRING");
+                break;
+            case "June":
+            case "July":
+            case "August":
+                System.out.println("SUMMER");
+                break;
+            case "September":
+            case "October":
+            case "November":
+                System.out.println("AUTUMN");
+                break;
+            default:
+                System.out.println("No this month");
+        }
+    }
+}
