@@ -7,26 +7,26 @@ public class SeasonExample {
         System.out.println("Enter any month:");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String month = br.readLine();
-        switch (month) {
-            case "December":
-            case "January":
-            case "February":
-                System.out.println("WINTER");
+        switch (month.toLowerCase()) {
+            case "december":
+            case "january":
+            case "february":
+                System.out.println(Season.WINTER);
                 break;
-            case "March":
-            case "April":
-            case "May":
-                System.out.println("SPRING");
+            case "march":
+            case "april":
+            case "may":
+                System.out.println(Season.SPRING);
                 break;
-            case "June":
-            case "July":
-            case "August":
-                System.out.println("SUMMER");
+            case "june":
+            case "july":
+            case "august":
+                System.out.println(Season.SUMMER);
                 break;
-            case "September":
-            case "October":
-            case "November":
-                System.out.println("AUTUMN");
+            case "september":
+            case "october":
+            case "november":
+                System.out.println(Season.AUTUMN);
                 break;
             default:
                 System.out.println("No this month");
