@@ -1,2 +1,0 @@
-# season-example
-season-example
